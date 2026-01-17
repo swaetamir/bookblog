@@ -1,6 +1,9 @@
+import type React from "react"
 import type { Metadata } from "next"
 import localFont from "next/font/local"
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import { Header } from "@/components/header"
 
 const gambarino = localFont({
   src: [
@@ -39,7 +42,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${gambarino.variable} ${switzer.variable} antialiased`}>
+        <Header />
         {children}
+        <Analytics />
       </body>
     </html>
   )
