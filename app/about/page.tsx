@@ -11,11 +11,16 @@ const socialLinks = [
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-[#101B36] text-[#C6C4B3] pt-52 pb-16 px-16">
-      {/* Content Card */}
-      <div className="ml-24 bg-[#C6C4B3] rounded-[19px] max-w-[1145px] p-11">
+    <main className="min-h-screen bg-[#101B36] text-[#C6C4B3] pt-28 pb-16 px-16">
+      {/* ABOUT Title */}
+      <div className="ml-48 mb-8">
+        <h1 className="font-serif text-[64px] leading-[55.31px]">ABOUT</h1>
+      </div>
+
+      {/* Content Card - spans from under logo to under "+" in nav */}
+      <div className="ml-24 mr-24 bg-[#C6C4B3] rounded-[19px] py-12 px-14 flex flex-col">
         {/* Welcome Text */}
-        <p className="font-serif text-[36px] leading-[31.11px] text-black">
+        <p className="font-serif text-[36px] leading-[1.4] text-black">
           welcome to my book blog! as an avid reader & full-time
           <br />
           CS & stats student, i wanted to create a little passion project
@@ -28,25 +33,25 @@ export default function AboutPage() {
         </p>
 
         {/* Sign off */}
-        <p className="font-serif text-[36px] leading-[31.11px] text-black mt-16">
+        <p className="font-serif text-[36px] leading-[1.4] text-black mt-12">
           lots of love, swaeta
         </p>
 
         {/* Contact Section */}
-        <div className="mt-20">
-          <h2 className="font-serif text-[36px] leading-[31.11px] text-[#252B37]">
+        <div className="mt-12">
+          <h2 className="font-serif text-[36px] leading-[1.4] text-[#252B37]">
             contact me!
           </h2>
 
           {/* Social Links */}
-          <div className="flex gap-8 mt-8">
+          <div className="flex gap-8 mt-5">
             {socialLinks.map((link) => (
               <Link
                 key={link.label}
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-serif text-[36px] leading-[31.11px] text-[#252B37] hover:underline transition-all"
+                className="font-serif text-[36px] leading-[1.4] text-[#252B37] hover:underline transition-all"
               >
                 {link.label}
               </Link>

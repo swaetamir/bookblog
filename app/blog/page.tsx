@@ -29,11 +29,11 @@ const categories = [
 
 export default function BlogPage() {
   return (
-    <main className="min-h-screen bg-[#101B36] text-[#C6C4B3] pt-32 pb-16 px-24">
+    <main className="min-h-screen bg-[#101B36] text-[#C6C4B3] pt-28 pb-16 px-16">
       {/* BLOG Title */}
-      <h1 className="font-serif text-[64px] leading-[55.31px] mb-12 ml-48">
-        BLOG
-      </h1>
+      <div className="ml-48 mb-8">
+        <h1 className="font-serif text-[64px] leading-[55.31px]">BLOG</h1>
+      </div>
 
       <div className="flex gap-16">
         {/* Blog Posts */}
